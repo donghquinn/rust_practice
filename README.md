@@ -19,7 +19,7 @@
 ``` cargo build {filePath/fileName} --release ```
 
 ## Dependencies
-- (crates.io)[httsp://crates.io] is the Rust Community registry. You can find dependencies you looking for.
+- [crates.io](httsp://crates.io) is the Rust Community registry. You can find dependencies you looking for.
 - Add into Cargo.toml by commanding below.
 
 ``` cargo add {package name} ```
