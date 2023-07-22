@@ -6,6 +6,10 @@ fn main() {
     if_else(43, 98);
 
     for_test();
+
+    loop_test();
+
+    while_test();
 }
 
 fn calculate_numbers(x: i32) -> i32 {
@@ -20,6 +24,33 @@ fn if_else(x: i32, y: i32) {
     } else {
         println!("X ({}) and Y ({}) has the same value", y, x);
     }
+}
+
+fn loop_test() {
+    let mut count = 0;
+
+    loop {
+        println!("LOOP!!!");
+
+        count += 1;
+
+        if count == 10 {
+            println!("Count 10. Stop the Loop");
+            break;
+        }
+    }
+}
+
+fn while_test() {
+    let mut count = 0;
+
+    while count < 10 {
+        println!("Same Pattern with Loop");
+
+        count += 1;
+    }
+
+    println!("Count 10 stop while");
 }
 
 fn for_test() {
