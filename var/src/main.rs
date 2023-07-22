@@ -31,7 +31,7 @@ fn arrays() {
     let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
     println!(
-        "Access to Array Values: 0 - {}, 1 - {}, 4 - {}, -1 - {}",
+        "Access to Array Values: 0 - '{}', 1 - '{}', 4 - '{}', -1 - '{}'",
         array[0],
         array[1],
         array[4],
