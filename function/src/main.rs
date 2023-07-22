@@ -3,7 +3,9 @@ fn main() {
 
     println!("Result: {}", result);
 
-    if_else(43, 98)
+    if_else(43, 98);
+
+    for_test();
 }
 
 fn calculate_numbers(x: i32) -> i32 {
@@ -17,5 +19,13 @@ fn if_else(x: i32, y: i32) {
         println!("Y ({}) is Bigger than X ({})", y, x);
     } else {
         println!("X ({}) and Y ({}) has the same value", y, x);
+    }
+}
+
+fn for_test() {
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a.iter() {
+        println!("the value is: {}", element);
     }
 }

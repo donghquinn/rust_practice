@@ -45,3 +45,22 @@ let y = if true {
 ### loop
 - loop문은 그만두라고 명시할 때까지 코드 블럭을 반복 수행한다.
 - break 키워드를 이용해 루프를 중지시킬 수 있다.
+
+```
+loop {
+    println!("LOOP");
+}
+```
+
+### while
+- 특정 조건을 만족하고 있을 동안 반복
+
+### for
+- 흔히 알고 있는 그 for 문. 파이썬과 문법이 유사하다.
+```
+    let a = [10, 20, 30, 40, 50];
+
+    for element in a.iter() {
+        println!("the value is: {}", element);
+    }
+```
