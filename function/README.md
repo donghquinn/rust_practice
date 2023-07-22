@@ -21,22 +21,24 @@
 - 마지막 표현식을 리턴한다. 이 때 리턴되는 표현식에는 세미콜론을 넣으면 안된다.
 
 ```
-fn calculate (x: i32) -> i32 {
-    x + 1
-}
+    fn calculate (x: i32) -> i32 {
+        x + 1
+    }
 ```
 
 ## 제어문
 - if / else if / else 로 제어문을 사용한다.
 - 제어문에 사용할 표현식은 괄호 없이 넣는다.
 - 변수 선언에서도 사용할 수 있다.
+
 ```
-let y = if true {
-    5
-} else {
-    6
-}
+    let y = if true {
+        5
+    } else {
+        6
+    }
 ```
+
 - 각 제어문의 리턴값의 타입이 다를 경우, 에러 발생
 
 ## 반복문
@@ -47,9 +49,9 @@ let y = if true {
 - break 키워드를 이용해 루프를 중지시킬 수 있다.
 
 ```
-loop {
-    println!("LOOP");
-}
+    loop {
+        println!("LOOP");
+    }
 ```
 
 ### while
