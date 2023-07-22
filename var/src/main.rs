@@ -1,8 +1,8 @@
 fn main() {
     println!("Hello, world!");
 
-    let x = 32;
-    let y = 64;
+    let x: i32 = 32;
+    let y: i32 = 64;
 
     println!("X+Y = {}", x + y);
 
@@ -22,13 +22,13 @@ fn tuple() {
     let t: (f64, f64, f64) = (100., 0.5, 2.);
     let (x, y, z) = t;
 
-    let calculateResult = (x * y) * z;
+    let calculate_result: f64 = (x * y) * z;
 
-    println!("Tuple Calculate Result: {}", calculateResult);
+    println!("Tuple Calculate Result: {}", calculate_result);
 }
 
 fn arrays() {
-    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let array: [i32; 9] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
     println!(
         "Access to Array Values: 0 - '{}', 1 - '{}', 4 - '{}', -1 - '{}'",
