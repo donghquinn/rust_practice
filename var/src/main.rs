@@ -6,7 +6,9 @@ fn main() {
 
     println!("X+Y = {}", x + y);
 
-    tuple()
+    tuple();
+
+    arrays();
 }
 
 fn tuple() {
@@ -30,6 +32,9 @@ fn arrays() {
 
     println!(
         "Access to Array Values: 0 - {}, 1 - {}, 4 - {}, -1 - {}",
-        array[0], array[1], array[4], array[-1]
-    )
+        array[0],
+        array[1],
+        array[4],
+        array[array.len() - 1]
+    );
 }
