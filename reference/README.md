@@ -70,3 +70,16 @@ fn dangle() -> &String {
     &s
 }   // 이 스코프를 벗어나면 s 는 drop된다. 그런데 s의 참조자는 반환된다.
 ```
+
+## 슬라이스 Slice
+- 소유권을 갖지 않는 데이터 타입
+
+### 스트링 슬라이스 String Slice
+- String의 일부분에 대한 참조자
+```
+let s = String::from("hello world");
+
+// [start? ..  end?] : start에서 시작하여 end는 포함하지 않는 연속된 범위
+let hello = &s[0..5];
+let world = &s[6..11];
+```
