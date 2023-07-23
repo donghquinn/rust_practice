@@ -71,7 +71,6 @@ let s1 = String::from("hello");
 let s2 = s1.clone();
 
 println!("s1 = {}, s2 = {}", s1, s2);
-
 ```
 
 ## 스택에만 있는 데이터: 복사(Copy)
