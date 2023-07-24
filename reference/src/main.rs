@@ -29,3 +29,15 @@ fn string_slice() {
     // 아래 코드도 슬라이스 문법 없이 동작합니다!
     let word = first_word(my_string_literal);
 }
+
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[0..i];
+        }
+    }
+
+    &s[..]
+}
