@@ -33,3 +33,17 @@ let mut user = User {
 user.email = String::from("kdh970630@gmail.com");
 println!(user.email);
 ```
+
+## 튜플 구조체 Tuple Struct
+- 구조체명을 통해 의미를 부여하나, 필드 타입만 정의할 수 있음
+```
+struct Color (i32, i32, i32);
+
+let black = Color(0,0,0);
+```
+
+## 구조체 데이터의 소유권
+- 구조체 필드값의 타입을 &str이 아닌 String을 사용한 것은 구조체의 소유를 위해서이다.
+- 구조체 전체가 유효한 동안 구조체가 그 데이터를 소유하게 하기 위함
+    - 이는 라이프타임(LifeTimes)의 사용에 의한 것
+    - 구조체가 존재하는 동안 참조하는 데이터를 계속 존재할 수 있게 함.

@@ -12,6 +12,8 @@ fn main() {
 
     // println!("User Info: {:#?}", user_info);
     println!("User Email: {}", user_info.email);
+
+    println!("Square Value: {}", area((32., 54.)));
 }
 
 fn set_user(email: String, user: String) -> User {
@@ -20,4 +22,8 @@ fn set_user(email: String, user: String) -> User {
         email,
         is_active: true,
     }
+}
+
+fn area(dimensions: (f64, f64)) -> f64 {
+    dimensions.0 * dimensions.1
 }
