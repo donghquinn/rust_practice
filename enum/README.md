@@ -59,3 +59,15 @@ enum Iptypes {
 
 let ip_address = IpTypes::V4(String::from("192.102.131"));
 ```
+
+## 제네릭 타입 설정
+- 타입스크립트처럼 제네릭 타입 정의할 수 있다.
+```
+enum IpTypes<T> {
+    V4(T),
+    V6,
+}
+
+let ipV4 = IpType::V4("192.132.132");
+let ip: IpType<String> = V4("192.131.132");
+```
