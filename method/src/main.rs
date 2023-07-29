@@ -7,6 +7,14 @@ impl Rectangle {
     fn calculate(&self) -> f64 {
         self.width * self.height
     }
+
+    fn is_square(&self) {
+        if self.width == self.height {
+            println!("It's Square: {}", self.calculate());
+        } else {
+            println!("It's Rectangle: {}", self.calculate());
+        }
+    }
 }
 
 fn main() {
@@ -15,9 +23,5 @@ fn main() {
         height: 37.0,
     };
 
-    if size.width == size.height {
-        println!("It's Square: {}", size.calculate());
-    } else {
-        println!("It's Rectangle: {}", size.calculate());
-    }
+    size.is_square();
 }
