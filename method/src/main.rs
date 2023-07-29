@@ -15,5 +15,9 @@ fn main() {
         height: 37.0,
     };
 
-    println!("Size Calculate: {}", size.calculate());
+    if size.width == size.hegith {
+        println!("It's Square: {}", size.calculate());
+    } else {
+        println!("It's Rectangle: {}", size.calculate());
+    }
 }
