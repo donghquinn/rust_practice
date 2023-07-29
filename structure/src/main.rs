@@ -20,7 +20,7 @@ fn main() {
 
         println!("@@@@@@@@@@@@");
         println!(
-            "User Name: {} \n User Email: {}",
+            "User Name: {} \nUser Email: {}",
             user_info.user, user_info.email
         );
         println!("@@@@@@@@@@@@");
