@@ -15,8 +15,16 @@ fn main() {
         String::from("donghquinn"),
     );
 
-    // println!("User Info: {:#?}", user_info);
-    println!("User Email: {}", user_info.email);
+    if user_info.is_active {
+        println!("It's Active User");
+
+        println!("@@@@@@@@@@@@");
+        println!(
+            "User Name: {} \n User Email: {}",
+            user_info.user, user_info.email
+        );
+        println!("@@@@@@@@@@@@");
+    }
 
     println!("Square Value: {}", area((32., 54.)));
 
