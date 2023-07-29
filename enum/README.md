@@ -46,3 +46,15 @@ fn main() {
     };
 }
 ```
+
+## 열거형에 데이터 집어넣기
+- 열거형에 실제 데이터를 집어넣어 활용할 수 있다.
+- 이 경우 구조체를 굳이 사용할 필요가 없다.
+```
+enum Iptypes {
+    V4(String),
+    V6(String),
+}
+
+let ip_address = IpTypes::V4(String::from("192.102.131"));
+```
