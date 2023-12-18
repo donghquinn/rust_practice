@@ -1,7 +1,19 @@
 # Rust And Cargo
+
 - Cargo is Package Manager of Rust like yarn or npm from javascript
 - All the Dependencies and information will be exist on Cargo.toml like package.json of javascript
 - Rust file is end with .rs
+
+## installation(macOS)
+
+``` zsh
+ brew install restup-init
+```
+
+## Installation(macOS)
+
+- rustup: https://www.rust-lang.org
+- MSVC+: Builder rust
 
 ## Run
 - Can Run rust code by commanding below
