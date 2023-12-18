@@ -15,10 +15,19 @@
 - rustup: https://www.rust-lang.org
 - MSVC+: Builder rust
 
+## initiate
+
+```zsh
+    cargo init hello
+```
+
 ## Run
+
 - Can Run rust code by commanding below
 
-``` cargo run {filePath/fileName} ```
+``` zsh
+    cargo run {filePath/fileName} 
+```
 
 ## Build
 - Build Rust code by commanding below. It will compile at target/debug.
